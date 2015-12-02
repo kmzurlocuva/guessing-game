@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Kate's Guessing Game</title>
+    <script "text/javascript" src="game.js"></script>
   </head>
   <body><p>
     <h1> This Web page is about me, Kate</h1></p>
@@ -13,50 +14,5 @@
     <p><h2><strong>About Me</h2></strong></p>
     <p>My name is <em>Kate</em> and I am making a career shift after a decade plus working in natural resource conservation. I want to learn to code to enhance my skill set and challenge my mind. I love to solve puzzles, read trashy romance books, hike in the mountains with my son and husband, and cook for my family.
 </p>
-    <script>
-    var user = prompt("What is your name?");
-    alert('Nice to meet you ' + user + '!');
-
-    var counter = 0;
-    var state = prompt('Are you from WI?');
-
-
-if (state == 'yes') {
-  alert(state + ", I am a cheesehead from Wisconsin.");
-  counter = counter + 1;
-} else {
-  alert("I am from Wisconsin")
-}
-
-var kid = prompt('Do you have a kid?');
-if (kid == 'yes') {
-  alert(kid + ", I have a kid named July");
-  counter = counter + 1;
-} else {
-  alert("I have a kid");
-}
-
-var decade = prompt('Were you born in the 1970s?');
-if (decade == 'yes') {
-  alert(decade + ", I was born in 1979");
-  counter = counter + 1;
-} else {
-  alert("I am old.");
-}
-
-if (counter == 3) {
-alert("We're practically married");
-} else if (counter == 2) {
-    alert("You kinda got it");
-  } else {
-      alert("You don't know me.");
-    };
-
-
-
-
-
-
-    </script>
   </body>
 </html>
