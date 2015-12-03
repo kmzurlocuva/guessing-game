@@ -84,3 +84,6 @@ for (var i = 0; i < cities.length; i++) {
 };
 }
 arrayGame();
+
+var joke = prompt('How do you make a tissue dance?');
+  alert('You put a little boogie in it.');
