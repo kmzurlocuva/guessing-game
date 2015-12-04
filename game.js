@@ -12,7 +12,7 @@ function ques1() {
   counter = counter + 1;
   } else {
   stateEl.textContent = "I am from Wisconsin";
-  kidEl.className = "wrong";
+  stateEl.className = "wrong";
   }
 
 }
@@ -30,6 +30,7 @@ function ques2() {
   }
   console.log(kid);
 }
+
 ques1();
 ques2();
 ques3();
@@ -99,20 +100,19 @@ function arrayGame() {
   var homeTown = prompt('What cities have I visited this year?');
   var cities = ['madison','green bay','la crosse', 'milwaukee'];
   homeTown = homeTown.toLowerCase();
+  var correct = false;
   console.log(cities);
   for (var i = 0; i < cities.length; i++) {
     if (homeTown === cities[i]) {
       console.log("this should be correct...");
-      alert("Yep, I grew up in Wisconsin.");
-      return;
+      correct = true;
     } else {
-      alert("Nope, not this year.");
-      return;
     }
 
-  };
-}
+  }
+  alert("Yep! Love that city.");
 arrayGame();
+
 
 var joke = prompt('How do you make a tissue dance?');
   alert('You put a little boogie in it.');
