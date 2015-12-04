@@ -97,21 +97,22 @@ function ques5() {
 ques5();
 
 function arrayGame() {
-  var homeTown = prompt('What cities have I visited this year?');
   var cities = ['madison','green bay','la crosse', 'milwaukee'];
-  homeTown = homeTown.toLowerCase();
   var correct = false;
   console.log(cities);
+  while (correct === false) {
+    var homeTown = prompt('What is one of the cities I visited this year?').toLowerCase();
   for (var i = 0; i < cities.length; i++) {
     if (homeTown === cities[i]) {
       console.log("this should be correct...");
       correct = true;
     } else {
     }
-
   }
-  alert("Yep! Love that city.");
+}alert("Yep! Love that city.");
+}
 arrayGame();
+
 
 
 var joke = prompt('How do you make a tissue dance?');
