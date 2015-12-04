@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function ques1() {
 var user = prompt("What is your name?");
 alert('Nice to meet you ' + user + '!');
@@ -29,8 +28,8 @@ console.log(kid);
 ques1();
 ques2();
 ques3();
-ques4();
-ques5();
+
+
 
 function ques3() {
 var decade = prompt('Do you love being outside?');
@@ -42,9 +41,9 @@ counter = counter + 1;
 } else {
 alert("Hiking is the best way to make yourself happy. You should try it.");
 }
-console.log(kid);
-}
 
+}
+function counting() {
 if (counter == 3) {
 alert("You know me so well we're practically married");
 } else if (counter == 2) {
@@ -52,6 +51,8 @@ alert("You kinda got it");
 } else {
   alert("You don't know me very well at all.");
 }
+}
+
 
 function ques4() {
 var age = parseInt(prompt('How old are you?'));
@@ -66,6 +67,7 @@ if (age === 36) {
   alert("Nope, I'm 36.");
 }
 }
+ques4();
 
 function ques5() {
 var answer = 36;
