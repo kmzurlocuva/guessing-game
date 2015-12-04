@@ -80,19 +80,19 @@ function ques4() {
 ques4();
 
 function ques5() {
-var answer = 36;
-var user = parseInt(prompt('What is your number?'));
-  while (user !== answer) {
-    if (user > answer) {
-      alert("Too high.");
+  var answer = 36;
+  var user = parseInt(prompt('What is your number?'));
+    while (user !== answer) {
+      if (user > answer) {
+        alert("Too high.");
+        user = parseInt(prompt('What is your number?'));
+      } else {
+      alert("You are wrong.");
       user = parseInt(prompt('What is your number?'));
-    } else {
-    alert("You are wrong.");
-    user = parseInt(prompt('What is your number?'));
-    }
-}
-    alert("You got it!");
-}
+      }
+  }
+      alert("You got it!");
+  }
 ques5();
 
 function arrayGame() {
@@ -100,17 +100,17 @@ function arrayGame() {
   var cities = ['madison','green bay','la crosse', 'milwaukee'];
   homeTown = homeTown.toLowerCase();
   console.log(cities);
-for (var i = 0; i < cities.length; i++) {
-  if (homeTown === cities[i]) {
-    console.log("this should be correct...");
-    alert("Yep, I grew up in Wisconsin.");
-    return;
-  } else {
-    alert("Nope, not this year.");
-    return;
-  }
+  for (var i = 0; i < cities.length; i++) {
+    if (homeTown === cities[i]) {
+      console.log("this should be correct...");
+      alert("Yep, I grew up in Wisconsin.");
+      return;
+    } else {
+      alert("Nope, not this year.");
+      return;
+    }
 
-};
+  };
 }
 arrayGame();
 
