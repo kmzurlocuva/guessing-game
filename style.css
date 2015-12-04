@@ -1,3 +1,7 @@
-h5 {
+.right {
   color: green;
 }
+
+.wrong {
+  color: red;
+};

@@ -8,9 +8,11 @@ function ques1() {
     state = state.toLowerCase();
   if (state === 'yes' || state === 'y') {
   stateEl.textContent = state + ", I am a cheesehead from Wisconsin.";
+  stateEl.className = "right";
   counter = counter + 1;
   } else {
   stateEl.textContent = "I am from Wisconsin";
+  kidEl.className = "wrong";
   }
 
 }
@@ -20,9 +22,11 @@ function ques2() {
     kid = kid.toLowerCase();
   if (kid === 'yes' || kid === 'y') {
   kidEl.textContent = kid + ", I have a kid named July";
+  kidEl.className = "right";
   counter = counter + 1;
   } else {
   kidEl.textContent = kid + "I have a kid";
+  kidEl.className = "wrong";
   }
   console.log(kid);
 }
@@ -39,9 +43,11 @@ function ques3() {
     console.log("This should be all lower case...: " + decade);
   if (decade === 'yes' || decade === 'y') {
   decadeEl.textContent = decade + ", I live for nature";
+  decadeEl.className = "right";
   counter = counter + 1;
   } else {
   decadeEl.textContent = "Hiking is the best way to make yourself happy. You should try it.";
+  decadeEl.className = "wrong";
   }
 
 }
