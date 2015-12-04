@@ -1,3 +1,4 @@
+function ques1() {
 var user = prompt("What is your name?");
 alert('Nice to meet you ' + user + '!');
 
@@ -12,6 +13,8 @@ counter = counter + 1;
 alert("I am from Wisconsin")
 }
 
+}
+function ques2() {
 var kid = prompt('Do you have a kid?');
   kid = kid.toLowerCase();
 if (kid === 'yes' || kid === 'y') {
@@ -21,7 +24,12 @@ counter = counter + 1;
 alert("I have a kid");
 }
 console.log(kid);
+}
+ques3();
+ques2();
+ques1();
 
+function ques3() {
 var decade = prompt('Do you love being outside?');
   decade = decade.toLowerCase();
   console.log("This should be all lower case...: " + decade);
@@ -32,6 +40,7 @@ counter = counter + 1;
 alert("Hiking is the best way to make yourself happy. You should try it.");
 }
 console.log(kid);
+}
 
 if (counter == 3) {
 alert("You know me so well we're practically married");
