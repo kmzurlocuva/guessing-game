@@ -1,29 +1,30 @@
-function ques1() {
-var user = prompt("What is your name?");
-alert('Nice to meet you ' + user + '!');
-
 var counter = 0;
-var state = prompt('Are you from WI?');
+function ques1() {
+  var user = prompt("What is your name?");
+  alert('Nice to meet you ' + user + '!');
 
-  state = state.toLowerCase();
-if (state === 'yes' || state === 'y') {
-alert(state + ", I am a cheesehead from Wisconsin.");
-counter = counter + 1;
-} else {
-alert("I am from Wisconsin")
-}
+  var state = prompt('Are you from WI?');
+  var stateEl = document.getElementById("state");
+    state = state.toLowerCase();
+  if (state === 'yes' || state === 'y') {
+  stateEl.textContent = state + ", I am a cheesehead from Wisconsin.";
+  counter = counter + 1;
+  } else {
+  stateEl.textContent = "I am from Wisconsin";
+  }
 
 }
 function ques2() {
-var kid = prompt('Do you have a kid?');
-  kid = kid.toLowerCase();
-if (kid === 'yes' || kid === 'y') {
-alert(kid + ", I have a kid named July");
-counter = counter + 1;
-} else {
-alert("I have a kid");
-}
-console.log(kid);
+  var kidEl = document.getElementById("kid");
+  var kid = prompt('Do you have a kid?');
+    kid = kid.toLowerCase();
+  if (kid === 'yes' || kid === 'y') {
+  kidEl.textContent = kid + ", I have a kid named July";
+  counter = counter + 1;
+  } else {
+  kidEl.textContent = kid + "I have a kid";
+  }
+  console.log(kid);
 }
 ques1();
 ques2();
@@ -32,40 +33,43 @@ ques3();
 
 
 function ques3() {
-var decade = prompt('Do you love being outside?');
-  decade = decade.toLowerCase();
-  console.log("This should be all lower case...: " + decade);
-if (decade === 'yes' || decade === 'y') {
-alert(decade + ", I live for nature");
-counter = counter + 1;
-} else {
-alert("Hiking is the best way to make yourself happy. You should try it.");
-}
+  var decadeEl = document.getElementById("decade");
+  var decade = prompt('Do you love being outside?');
+    decade = decade.toLowerCase();
+    console.log("This should be all lower case...: " + decade);
+  if (decade === 'yes' || decade === 'y') {
+  decadeEl.textContent = decade + ", I live for nature";
+  counter = counter + 1;
+  } else {
+  decadeEl.textContent = "Hiking is the best way to make yourself happy. You should try it.";
+  }
 
 }
 function counting() {
-if (counter == 3) {
-alert("You know me so well we're practically married");
-} else if (counter == 2) {
-alert("You kinda got it");
-} else {
-  alert("You don't know me very well at all.");
-}
+  var elCounting = document.getElementById("counting");
+  if (counter == 3) {
+  elCounting.textContent = "You know me so well we're practically married";
+  } else if (counter == 2) {
+  elCounting.textContent = "You kinda got it";
+  } else {
+  elCounting.textContent = "You don't know me very well at all.";
+  }
 }
 
 
 function ques4() {
-var age = parseInt(prompt('How old are you?'));
-console.log("age is this type of data, after parseInt:" + typeof(age));
-if (age === 36) {
-  console.log("I'm in the if statement now.");
-  alert("You're right!");
-} else if (age > 36) {
-  alert("Harsh.  Burn.");
-} else {
-  console.log("I'm in the else statement.");
-  alert("Nope, I'm 36.");
-}
+  var elAge = document.getElementById("age");
+  var age = parseInt(prompt('How old are you?'));
+  console.log("age is this type of data, after parseInt:" + typeof(age));
+  if (age === 36) {
+    console.log("I'm in the if statement now.");
+    elAge.textContent = "You're right!";
+  } else if (age > 36) {
+    elAge.textContent = "Harsh.  Burn.";
+  } else {
+    console.log("I'm in the else statement.");
+    elAge.textContent = "Nope, I'm 36.";
+  }
 }
 ques4();
 
@@ -81,9 +85,9 @@ var user = parseInt(prompt('What is your number?'));
     user = parseInt(prompt('What is your number?'));
     }
 }
+    alert("You got it!");
 }
-alert("You got it!");
-
+ques5();
 
 function arrayGame() {
   var homeTown = prompt('What cities have I visited this year?');
